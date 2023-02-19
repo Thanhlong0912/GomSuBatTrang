@@ -1,0 +1,7 @@
+﻿@if (Notification.has_flash())
+{
+    <a href="~/Areas/Admin/Views/Shared/_MessageAlert.cshtml">~/Areas/Admin/Views/Shared/_MessageAlert.cshtml</a>
+    var Notifi = Notification.get_flash();
+    <input type="hidden" value="@Notifi.mgs_type" name="mgs_type" />
+    <input type="hidden" value=" @Notifi.mgs" name="mgs" />
+}
